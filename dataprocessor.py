@@ -3,8 +3,11 @@ from pdfreader import read_pdf
 from chunker import chunk_pages
 from embedder import embed_chunks
 from vectorstore import store_in_pinecone
+from pinecone import Pinecone
 from typing import List
 
+pc = Pinecone(api_key="********-****-****-****-************")
+index = pc.Index("quickstart")
 pdf_path = "./resources/HRPolicy.pdf"
 
 def run():
