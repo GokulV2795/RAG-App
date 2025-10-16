@@ -7,7 +7,7 @@ from pinecone import Pinecone
 from typing import List
 
 pc = Pinecone(api_key="********-****-****-****-************")
-index = pc.Index("quickstart")
+index = pc.Index("llm-retrieval-augmented-generation")
 pdf_path = "./resources/HRPolicy.pdf"
 
 def run():
